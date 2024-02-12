@@ -27,9 +27,6 @@ Login Screen |  Main Screen
 Appointments Management |  Appointment Reservation
 ![](https://i.imgur.com/brRoCYo.png)  |  ![](https://i.imgur.com/PSDUMP5.png)
 
-## Authors
-Ι would like to thank everyone who worked on this project.
-- [@geoxhon - Γεώργιος Χονδροματίδης](https://github.com/geoxhon/)
 
 
 ## Special Thanks
