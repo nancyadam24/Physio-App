@@ -1,0 +1,147 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="#56FFB8">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:layout_marginBottom="@dimen/_minus43sdp"
+        app:cardCornerRadius="@dimen/_47sdp"
+        app:cardElevation="@dimen/_16sdp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_463sdp">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="@dimen/_222sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="Νέα Παροχή"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/r2_save_btn"
+                android:layout_width="@dimen/_232sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="132dp"
+                android:backgroundTint="#56FFB8"
+                android:text="Αποθήκευση"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerFamily="rounded"
+                app:cornerRadius="@android:dimen/notification_large_icon_width"
+                app:cornerSize="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/r2_cost_tv" />
+
+            <EditText
+                android:id="@+id/r2_cost_tv"
+                android:layout_width="@dimen/_235sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borders"
+                android:gravity="clip_horizontal"
+                android:hint="Κόστος ανά Συνεδρία"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#7B7B7B"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/r2_desc_tv" />
+
+            <EditText
+                android:id="@+id/r2_sname_tv"
+                android:layout_width="@dimen/_235sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/borders"
+                android:gravity="clip_horizontal"
+                android:hint="Όνομα Παροχής"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:textColor="#7B7B7B"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/r2_code_tv" />
+
+            <EditText
+                android:id="@+id/r2_code_tv"
+                android:layout_width="@dimen/_235sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:autoText="false"
+                android:background="@drawable/borders"
+                android:gravity="clip_horizontal"
+                android:hint="Κωδικός"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:textColor="#7B7B7B"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+            <EditText
+                android:id="@+id/r2_desc_tv"
+                android:layout_width="@dimen/_235sdp"
+                android:layout_height="@dimen/_82sdp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borders"
+                android:gravity="top"
+                android:hint="Περιγραφή"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="#7B7B7B"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/r2_sname_tv" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/_310sdp"
+        android:layout_height="@dimen/_218sdp"
+        android:layout_marginTop="@dimen/_minus41sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ergasia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

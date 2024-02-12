@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#56FFB8"
+    tools:context=".activities.AddDoctorActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_View1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginBottom="@dimen/_minus40sdp"
+        app:cardCornerRadius="@dimen/_50sdp"
+        app:cardElevation="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Δήλωση Φυσιοθεραπευτηρίου"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/NameText"
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="8dp"
+                    android:backgroundTint="#F6F6F6"
+                    android:hint="Ονοματεπώνυμο" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Address"
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="8dp"
+                    android:backgroundTint="#F6F6F6"
+                    android:hint="Διεύθυνση"
+                    />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/AFM"
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="8dp"
+                    android:backgroundTint="#F6F6F6"
+                    android:hint="ΑΦΜ" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/UsernameText"
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="8dp"
+                    android:backgroundTint="#F6F6F6"
+                    android:hint="Ονομα Χρήστη" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/PasswordText"
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/custom_edittext"
+                    android:backgroundTint="#F6F6F6"
+                    android:hint="Κωδικός"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EmailText"
+                    android:layout_width="@dimen/_290sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="8dp"
+                    android:backgroundTint="#F6F6F6"
+                    android:hint="Email" />
+
+                <Button
+                    android:id="@+id/SaveButton"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:backgroundTint="#56FFB8"
+                    android:fontFamily="sans-serif"
+
+                    android:text="Αποθήκευση"
+                    android:textSize="@dimen/_20sdp"
+
+                    app:cornerRadius="@dimen/_20sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ergasia"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

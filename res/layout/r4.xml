@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/physio_green"
+    tools:context=".activities.PatientInfoActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="-55dp"
+        android:background="@drawable/card_view_rounded_top_corners"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="20dp">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/appointmentScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+
+            android:paddingBottom="@dimen/_120sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Ιστορικό Ασθενή"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_27sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.cardview.widget.CardView
+                    android:id = "@+id/userInfoCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    app:layout_constraintTop_toBottomOf="@id/textView"
+                    app:layout_constraintStart_toStartOf="@id/textView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:cardElevation="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingVertical="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="Αναγνωρηστικό" />
+
+                            <TextView
+                                android:id="@+id/username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="@dimen/_80sdp"
+                                android:layout_weight="0.5"
+                                android:gravity="end|center_vertical"
+                                android:text="doctor1"
+                                />
+                        </LinearLayout>
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </com.google.android.material.divider.MaterialDivider>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingVertical="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="Όνοματεπώνυμο" />
+
+                            <TextView
+                                android:id="@+id/displayName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Μπία Μπέκου" />
+                        </LinearLayout>
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.divider.MaterialDivider>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingVertical="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="Email" />
+
+                            <TextView
+                                android:id="@+id/email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="icsXXXXX@uom.edu.gr" />
+                        </LinearLayout>
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.divider.MaterialDivider>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingVertical="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="ΑΜΚΑ/ΑΦΜ" />
+
+                            <TextView
+                                android:id="@+id/SSN"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="icsXXXXX@uom.edu.gr" />
+                        </LinearLayout>
+                        <com.google.android.material.divider.MaterialDivider
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.divider.MaterialDivider>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingVertical="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="Διεύθυνση" />
+
+                            <TextView
+                                android:id="@+id/addressText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="Edo Ekei 23" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textViewHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Συνεδρίες"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/userInfoCard" />
+                <LinearLayout
+                    android:id="@+id/patientRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_40sdp"
+                    app:layout_constraintTop_toBottomOf="@id/textViewHistory">
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
