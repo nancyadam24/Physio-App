@@ -1,5 +1,5 @@
-#PhysioApp
-PhysioApp is an Android Application that brings patients and doctors together
+# PhysioApp
+PhysioApp is an Android Application that brings patients and doctors together.
 
 The app was developed for the purposes of the course "Application Development for Mobile Devices" University of Macedonia
 
